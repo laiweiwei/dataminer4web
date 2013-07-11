@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5"/>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v6.0">
+		<attributes>
+			<attribute name="owner.project.facets" value="jst.web"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/weka-stable"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container/solidbase-all"/>
+	<classpathentry kind="lib" path="C:/Program Files/Weka-3-6/weka-src/weka-stable_fat.jar"/>
+	<classpathentry kind="lib" path="F:/TDDOWNLOAD/RmiJdbc.jar"/>
+	<classpathentry kind="lib" path="F:/TDDOWNLOAD/mckoidb.jar"/>
+	<classpathentry kind="lib" path="F:/TDDOWNLOAD/idb.jar"/>
+	<classpathentry kind="lib" path="F:/TDDOWNLOAD/hsqldb.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/mysql-connector-java-5.1.24-bin.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Weka-3-6/weka.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Weka-3-6/remoteExperimentServer.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

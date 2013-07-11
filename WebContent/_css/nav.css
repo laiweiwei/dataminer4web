@@ -1,0 +1,102 @@
+@CHARSET "UTF-8";
+
+/**
+	Code : chenyoca ( chenyoca@163.com )
+	Date : 2011-11-19
+	Desc : 导航菜单UL列表样式
+**/
+ul#nav_list{
+	margin:0;
+	padding:0;
+	list-style:none;
+	float:left;
+}
+ul#nav_list li{
+	width:100px;
+	height:35px;
+	padding-top:15px;
+	float:left;
+	text-align:center;
+}
+
+ul#nav_list li a{
+	text-decoration:none;
+	color:#FFFFFF;
+	font-weight:bold;
+}
+ul#nav_list >li:hover{
+	background:url("image/nav_current.png") no-repeat;
+	cursor:pointer;
+}
+/**************************************
+	CSS style for navigation 
+	code : chenyoca
+	date : 2011-11-9
+*************************************/
+
+/*<![CDATA[*/
+/***********************************
+ *
+ * 基本样式
+ * 
+ * 如果你不知道你在做什么，请不要修改!
+ * 
+ ************************************/
+.menu, .menu ul { padding: 0; border: 0; list-style-type: none; display: block; }
+.menu li { margin: 0; padding: 0; border: 0; display: block; float: left; position: relative; z-index: 5; }
+.menu li:hover { z-index: 10000; white-space: normal; }
+.menu li li { float: none; }
+.menu ul { visibility: hidden; position: absolute; z-index: 10; left: 0;	 top: 0; }
+.menu li:hover>ul { visibility: visible; top: 100%; }
+.menu li li:hover>ul { top: 0; left: 100%; }
+.menu:after,.menu ul:after {content: "."; height: 0; display: block; visibility: hidden; overflow: hidden; clear: both; }
+.menu, .menu ul { min-height: 0; }
+.menu ul { padding: 10px 30px 30px 30px; margin: -10px 0 0 -30px; 
+/*background: #f00;*/ /*反注释此处，可以看到子菜单的安全区*/ }
+.menu ul ul { padding: 30px 30px 30px 10px; margin: -30px 0 0 -10px; }
+
+/***********************************
+ *
+ * 设计样式
+ * 
+ ************************************/
+ ul#nav_list li > ul {
+	width: 150px;
+}
+ ul#nav_list li>ul li{
+	background:url("image/nav_sub_bg.png") repeat;
+	width:140px;
+	height:30px;
+	padding-top:10px;
+	padding-left:9px;
+	text-align:left;
+ }
+ ul#nav_list li>ul li:hover{
+	background:url("image/sub_nav_current_h.png") repeat;
+ }
+ ul#nav_list li>ul li a{
+	font-size:14px;
+ }
+
+.menu li li {	/* create borders around each item */
+	border: 1px solid #A0B9D8;
+	border-top:none;
+}
+
+.menu ul>li + li {	/* and remove the top border on all but first item in the list */
+	border-top: 0;
+}
+
+.menu li li:hover>ul {	/* inset 2nd+ submenus, to show off overlapping */
+	top: 5px;
+	left: 90%;
+}
+
+/* Fix for IE5/Mac \*//*/
+.menu a {
+	float: left;
+}
+/* End Fix */
+
+/*]]>*/
+

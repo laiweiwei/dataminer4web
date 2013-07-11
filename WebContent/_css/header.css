@@ -1,0 +1,70 @@
+@CHARSET "UTF-8";
+/**
+	Code : chenyoca ( chenyoca@163.com )
+	Date : 2011-11-19
+	Desc : 系统页面头样式设置。
+		   Header包含Logo和Nav两部分。这是系统每个页面都使用到的模块。
+**/
+header,div#header{
+	width:100%;
+	height:165px;
+	background:url("image/head_large_background.png") no-repeat;
+}
+div#header_large{
+	width:100%;
+	height:155px;
+	background:url("image/header_large.png") no-repeat 70px 50px;
+}
+div#logo{
+	width:100%;
+	height:100px;
+}
+
+div#nav{
+	width:998px;
+	height:50px;
+	padding:2px 2px 3px 2px;
+}
+/**
+	Code : chenyoca ( chenyoca@163.com )
+	Date : 2011-11-19
+	Desc : 放置在导航条前面的警报灯样式。
+		   样式颜色对应：not_support、connecting、connected、disconnect几种状态。
+**/
+div#alarm_light{
+	width:50px;
+	height:50px;
+	float:left;
+}
+
+div.not_support{
+	background:url("image/light_black.png") no-repeat;
+}
+div.connecting{
+	background:url("image/light_gray.png") no-repeat;
+}
+div.connected{
+	background:url("image/light_green.png") no-repeat;
+}
+div.disconnect{
+	background:url("image/light_red.png") no-repeat;
+}
+
+/**
+	Code : chenyoca ( chenyoca@163.com )
+	Date : 2011-11-19
+	Desc : 退出系统链接样式
+**/
+div#logout{
+	width:100px;
+	height:35px;
+	padding-top:15px;
+	padding-left:45px;
+	float:right;
+	background:url("image/logout_icon.png") no-repeat;
+}
+div#logout a{
+	text-decoration:none;
+	color:#FFFFFF;
+	font-weight:bold;
+}

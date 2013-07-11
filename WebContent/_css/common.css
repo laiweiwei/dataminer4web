@@ -1,0 +1,35 @@
+@CHARSET "UTF-8";
+html,body{
+	margin:0;
+	padding:0;
+	background:#3397E9;
+}
+div#main_wrapper{
+	width:100%;
+	background:url("image/body_split_background.png") repeat-x;
+}
+div#wrapper{
+	width:1004px;
+	margin:0 auto;
+}
+
+div#main_content{
+	width:986px;
+	height:auto;
+	padding:8px;
+	border:1px solid #454544;
+	background:#FFFFFF;
+}
+
+div#footer{
+	width:1004px;
+	height:50px;
+}
+
+.floatLeft{ float:left;}
+.floatRight{ float:right;}
+.clear{clear:both;width:100%;height:1px;}
+.blank30{height:30px; width:100%;}
+.blank15{height:15px; width:100%;}
+.blank10{height:10px; width:100%;}
+.blank5{height:5px; width:100%;}

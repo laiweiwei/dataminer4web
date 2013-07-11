@@ -1,0 +1,58 @@
+@charset "utf-8";
+/**
+ * Code: chenyoca
+ * Date: 2011-12-7
+ * Desc: 对DWZ默认样式的覆盖
+**/
+#header{height:85px}
+#leftside, #container, #splitBar, #splitBarProxy{top:90px}
+div#header a.logo{ width:400px;} 
+
+/*div#navMenu li a, div#navMenu li span{ color:#EEEEEE;}*/
+
+/** 报警文字闪烁 **/
+span.red{ color:red; }
+span.blue{ color:blue; }
+span.black{ color:black; }
+
+span#warning-message{ font-size:14px; font-weight:bold; }
+
+/* 覆盖DWZ表单域的legend样式 */
+fieldset legend:hover { cursor:pointer; background-color: #B8D0D6; }
+fieldset legend { padding: 5px; border: 1px dotted #B8D0D6; font-weight: bold; background:#E5EDEF; }
+/*某些录入数据的界面的input和textarea元素需要占用整行长度*/
+fieldset dl dd input.long,fieldset dl dd textarea.long{ width:510px; }
+
+.pageFormContent .hasNextInput { margin-right:10px; }
+
+/* 由于导入新版的core.css，出现在dialog窗体中的input出现混乱的问题 */
+.pageFormContent dl.nowrap dd, .nowrap dd{ width:auto; }
+/** 样式覆盖 **/
+div.pageContent fieldset { padding: 3px; margin: 0 0 5px 0; border: 1px dotted #B8D0D6; }
+
+div#muitlConditionSearch ul.searchContent li label{ width:auto; }
+div#muitlConditionSearch ul.searchContent li{ width:auto; }
+input.showInput{ background:#FFFFFF; border:1px solid #A2BAC0; }
+p.exinfo{
+	padding:5px 10px;
+	color:red;
+	font-size:14px;
+}
+
+td span.red,dd span.red{
+	color:red;
+	line-height: 21px;
+}
+td span.green,dd span.red{
+	color:green;
+	line-height: 21px;
+}
+dd span.red,dd span.green{
+	padding-left:10px;
+}
+/*导航条被选中状态的字体颜色，与主题匹配*/
+/*div#navMenu li.selected a span{ color:#FFFFFF;}*/
+/*
+table.list thead tr th.diff_show,table.list tbody tr td.diff_show{ background:#E2EBED;}
+*/
+table.list thead tr th{ text-align:center; font-weight:blod;}
